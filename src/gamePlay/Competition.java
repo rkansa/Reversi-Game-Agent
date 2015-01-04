@@ -15,8 +15,9 @@ public class Competition {
 	Utility helper;
 	
 	public Competition(GameState gs, float cpuTimeLeft) {
-		super();
+	super();
 		this.gs = gs;
+		this.maxDepth=4;
 		this.cpuTimeLeft = cpuTimeLeft;
 		this.width = Constants.BOARD_WIDTH;
 		this.height = Constants.BOARD_HEIGHT;
@@ -26,23 +27,14 @@ public class Competition {
 			this.opponentPlayer="O";
 		else if(this.myPlayer.endsWith("O"))
 			this.opponentPlayer="X";
-		if(this.cpuTimeLeft==200)
-		this.maxDepth=4;                       //Need to change to this
-		if(this.cpuTimeLeft>=185 && this.cpuTimeLeft<=200)
+		if(this.cpuTimeLeft==200 || (this.cpuTimeLeft>=80 && this.cpuTimeLeft<165) || this.cpuTimeLeft<15 )
+		this.maxDepth=4;                       
+		if((this.cpuTimeLeft>=185 && this.cpuTimeLeft<=200)|| this.cpuTimeLeft>=15 && this.cpuTimeLeft<40)
 			this.maxDepth=7;
 		if(this.cpuTimeLeft>=165 && this.cpuTimeLeft<185)
 			this.maxDepth=5;
-		if(this.cpuTimeLeft>=80 && this.cpuTimeLeft<165)
-			this.maxDepth=4;
 		if(this.cpuTimeLeft>=40 && this.cpuTimeLeft<80)
-			this.maxDepth=6;
-		if(this.cpuTimeLeft>=15 && this.cpuTimeLeft<40)
-			this.maxDepth=7;
-		if(this.cpuTimeLeft<15)
-			this.maxDepth=4;
-		else
-			this.maxDepth=4;
-		
+			this.maxDepth=6;		
 	}
 
 	public String  play()
