@@ -1,4 +1,9 @@
 package gamePlay;
+/**
+ * @author RAJ
+ * GameState is a POJO Class which stores the game state by storing the board in a 8x8 Matrix,
+ * the current player and the alpha-beta value at this state
+ */
 public class GameState {
 	
 	String[][] currentGameState=new String[8][8];	
