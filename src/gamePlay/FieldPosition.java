@@ -1,5 +1,10 @@
 package gamePlay;
 
+/**
+ * @author RAJ
+ *This is a POJO class for Field position of the board which has getters and setters for
+ *Row coordinate and column coordinates
+ */
 public class FieldPosition {
 
 	public int rowCoord;
