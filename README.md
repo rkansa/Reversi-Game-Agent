@@ -19,3 +19,5 @@ CPU Time left in seconds(eg. 200) in seconds
 
 Output Format:
 Move to be played:eg(a6)
+
+See Reversi-Competition.pdf for Complete Details
