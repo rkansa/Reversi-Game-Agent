@@ -12,6 +12,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+/**
+ * @author RAJ
+ *This is the main class which is the entry point of the program
+ */
 public class Main {
 
 	public static void main(String[] args) throws Exception 
