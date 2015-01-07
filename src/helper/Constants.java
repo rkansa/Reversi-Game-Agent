@@ -1,5 +1,11 @@
 package helper;
 
+/**
+ * @author RAJ
+ * This class stores all the constant values
+ * 
+ *
+ */
 public class Constants {
 	public static final int BOARD_HEIGHT=8,BOARD_WIDTH=8;
 	
