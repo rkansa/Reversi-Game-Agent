@@ -6,6 +6,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+/**
+ * @author RAJ
+ *This class provides methods to Read Game data from the Input File
+ */
 public class ReadGameData {
 	String path;
 
@@ -13,6 +17,12 @@ public class ReadGameData {
 		super();
 		this.path = path;
 	}
+	/**
+	 * This Method opens the file connection and reads data from it
+	 * @param File_Path          Path where the file is stored
+	 * @return fileData          Data of the file
+	 * @throws IOException
+	 */
 	public List<String> openFile(String File_Path) throws IOException
 	{
 		List<String> fileData = new ArrayList<String>();
@@ -29,6 +39,12 @@ public class ReadGameData {
 		return fileData;
 	}
 
+	/**
+	 * This method counts the total number of lines to be read
+	 * @param path               Path where the file is stored
+	 * @return totalLines        Total number of lines in the file
+	 * @throws IOException
+	 */
 	public int readLines(String path)throws IOException
 	{
 		FileReader fr=new FileReader(path);
