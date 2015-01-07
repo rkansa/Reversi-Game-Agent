@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+/**
+ * @author RAJ
+ *Utility class provides helper methods to perform various functions
+ */
 public class Utility {
 
 	public String[][] createGameStateFromInput(int height,int width,List<String> gData)
